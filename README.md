@@ -29,13 +29,18 @@ https://gowthamgaraga18-lab.github.io/CAFE-WEBSITE/
 
 On every push to `arena/6601410d-cafe-website`, the `deploy-pages.yml` workflow
 copies the static files into the `gh-pages` branch, which is the Pages publishing
-source. Creating that branch is also what enables Pages for the repository
-(GitHub does this automatically, no settings change needed).
+source. Each push to the working branch re-runs the deployment.
 
-Each push to the working branch re-runs the deployment. If the site ever needs
-to be published from `main` instead, change the Pages source in
-**Repository Settings → Pages → Build and deployment** and update the workflow's
-`branches` filter.
+One-time setup (requires repo admin, so it can't be automated with the limited
+GitHub App token used by CI):
+
+1. Open https://github.com/gowthamgaraga18-lab/CAFE-WEBSITE/settings/pages
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+3. Select branch `gh-pages` and folder `/ (root)`, then click **Save**.
+
+GitHub will then build and serve the site at the URL above. If the site ever
+needs to be published from `main` instead, change the Pages source and update
+the workflow's `branches` filter.
 
 ## Before going live
 
