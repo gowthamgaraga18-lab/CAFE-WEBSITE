@@ -1,17 +1,19 @@
 # Aaranya Cafe Website
 
-A responsive single-page website for Aaranya Cafe, built with plain HTML and CSS (no build step required).
+A responsive single-page marketing site for Aaranya Cafe, built with plain HTML
+and CSS — no build step and no JavaScript framework required.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Page markup: navigation, hero, story, menu, features, gallery, offers, testimonials, contact, footer |
-| `style.css` | All styling, including responsive breakpoints at 1000px, 768px and 480px |
+| `index.html` | Page markup: navbar, hero, marquee strip, story, CSS-only tabbed menu, features, gallery, offers, testimonials, visit/contact, footer |
+| `style.css` | Full stylesheet with CSS variables, animations, reveal effects and responsive breakpoints |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is (no Jekyll processing) |
-| `.github/workflows/deploy-pages.yml` | GitHub Actions workflow that publishes the site to the `gh-pages` branch |
+| `.github/workflows/deploy-pages.yml` | GitHub Actions workflow that mirrors the static files to the `gh-pages` branch |
 
-Images are loaded from Unsplash and fonts from Google Fonts, so an internet connection is needed for those assets.
+Fonts come from Google Fonts and photos from the Unsplash CDN, so those need an
+internet connection.
 
 ## Run locally
 
@@ -21,31 +23,28 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Imagery
+
+The supplied design referenced an `assets/images/` folder that wasn't included.
+All 27 image slots now use hotlinked, working Unsplash CDN photos with
+`?auto=format&fit=crop&w=...&q=80` sizing. Replace any `src` URL with a local
+path if you add your own photography later.
+
 ## Deployment
 
-This site is published with **GitHub Pages** at:
+Live site: https://gowthamgaraga18-lab.github.io/CAFE-WEBSITE/
 
-https://gowthamgaraga18-lab.github.io/CAFE-WEBSITE/
+GitHub Pages is enabled and publishes from `main`, folder `/ (root)`. Merging the
+working branch `arena/6601410d-cafe-website` into `main` publishes the site;
+every later merge updates it automatically.
 
-On every push to `arena/6601410d-cafe-website`, the `deploy-pages.yml` workflow
-copies the static files into the `gh-pages` branch, which is the Pages publishing
-source. Each push to the working branch re-runs the deployment.
-
-One-time setup (requires repo admin, so it can't be automated with the limited
-GitHub App token used by CI):
-
-1. Open https://github.com/gowthamgaraga18-lab/CAFE-WEBSITE/settings/pages
-2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-3. Select branch `gh-pages` and folder `/ (root)`, then click **Save**.
-
-GitHub will then build and serve the site at the URL above. If the site ever
-needs to be published from `main` instead, change the Pages source and update
-the workflow's `branches` filter.
+The workflow additionally mirrors the static files to `gh-pages` on each push to
+the working branch, so Pages can alternatively be pointed at `gh-pages` / `(root)`
+in **Repository Settings → Pages → Build and deployment**.
 
 ## Before going live
 
-Replace the placeholder details in `index.html`:
-
-- Cafe address in the contact section
-- Phone number (`+91 XXXXX XXXXX`) and the `tel:` link
-- Social media links in the footer
+- The contact details in `index.html` are sample values (12 Heritage Lane, MG
+  Road, Bengaluru 560001; +91 98765 43210; hello@aaranyacafe.in).
+- The footer year is `2024`; update it if you want the current year.
+- Social links in the footer are generic placeholders.

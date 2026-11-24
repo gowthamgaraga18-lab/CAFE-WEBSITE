@@ -1,464 +1,805 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aaranya Cafe - Experience authentic Indian flavours, handcrafted beverages and traditional hospitality.">
-    <meta name="theme-color" content="#183d32">
-    <title>Aaranya Cafe | A Taste of Tradition</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaranya Cafe — A Taste of Tradition, Served with Love</title>
+  <meta
+    name="description"
+    content="Aaranya Cafe — a modern Indian cafe celebrating authentic Indian flavours, handcrafted beverages, and warm hospitality. Where Indian traditions meet modern cafe culture."
+  />
+  <meta name="theme-color" content="#183D32" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Playfair Display (serif headings) + Poppins (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">AARANYA<span>.</span></a>
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
 
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#story">Our Story</a>
-                <a href="#menu">Menu</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
-            </div>
+      <a href="#home" class="brand">
+        <span class="brand-mark">A</span>
+        <span>
+          <span class="brand-name">AARANYA</span>
+          <span class="brand-tag">Cafe &middot; Est. 2009</span>
+        </span>
+      </a>
 
-            <a href="#contact" class="nav-btn">Visit Us</a>
-        </nav>
-    </header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Contact</a>
+      </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
+      <div class="nav-cta">
+        <a href="#visit" class="btn btn-gold">Reserve a Table</a>
+      </div>
+    </div>
+  </header>
 
-        <div class="hero-content container">
-            <p class="eyebrow">WELCOME TO AARANYA CAFE</p>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=80" alt="Elegant Indian cafe interior with warm pendant lighting, wooden tables and brass tableware" />
+    </div>
+    <div class="container hero-content">
+      <span class="eyebrow">Aaranya Cafe &middot; Bengaluru</span>
+      <h1>Where Indian Traditions Meet <em>Modern Cafe Culture.</em></h1>
+      <p class="lead">
+        Experience authentic Indian flavours, handcrafted beverages, and
+        unforgettable moments — brewed with love and served with warmth.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#story" class="btn btn-outline">Discover Our Story</a>
+      </div>
 
-            <h1>Where Indian Traditions
+      <div class="hero-meta">
+        <div class="meta-item">
+          <div class="num">15+</div>
+          <div class="lbl">Years of Tradition</div>
+        </div>
+        <div class="meta-item">
+          <div class="num">40+</div>
+          <div class="lbl">Authentic Dishes</div>
+        </div>
+        <div class="meta-item">
+          <div class="num">12k+</div>
+          <div class="lbl">Happy Guests</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                Meet Modern <span>Cafe Culture.</span>
-            </h1>
+  <!-- ===================== MARQUEE STRIP ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Masala Chai</span>
+      <span>South Indian Filter Coffee</span>
+      <span>Ghee Podi Dosa</span>
+      <span>Gulab Jamun</span>
+      <span>Irani Chai</span>
+      <span>Paneer Tikka</span>
+      <span>Rasmalai</span>
+      <span>Vada Pav</span>
+      <span>Kulfi</span>
+      <span>Saffron Badam Milk</span>
+      <!-- duplicate set for seamless loop -->
+      <span>Masala Chai</span>
+      <span>South Indian Filter Coffee</span>
+      <span>Ghee Podi Dosa</span>
+      <span>Gulab Jamun</span>
+      <span>Irani Chai</span>
+      <span>Paneer Tikka</span>
+      <span>Rasmalai</span>
+      <span>Vada Pav</span>
+      <span>Kulfi</span>
+      <span>Saffron Badam Milk</span>
+    </div>
+  </div>
 
-            <p class="hero-description">
-                Experience authentic Indian flavours, handcrafted beverages,
-                and unforgettable moments in every cup.
-            </p>
+  <!-- ===================== OUR STORY ===================== -->
+  <section class="section section-cream" id="story">
+    <div class="container story-grid">
+      <div class="story-media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=1000&q=80"
+          alt="Indian chai being poured from a brass kettle into a clay kulhad cup with steam rising"
+        / loading="lazy">
+        <div class="story-badge">
+          <div class="big">2009</div>
+          <div class="small">Our Journey Began</div>
+        </div>
+      </div>
 
-            <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
-                <a href="#story" class="btn btn-outline">Our Story</a>
-            </div>
+      <div class="story-copy">
+        <span class="eyebrow">Our Story</span>
+        <h2>Rooted in Tradition. Made for Today.</h2>
+        <p>
+          At Aaranya, we celebrate India's rich culinary heritage through authentic
+          flavours, traditional recipes, and a welcoming modern cafe experience.
+          Every cup of chai and every plate of food carries a story — of home
+          kitchens, of grandmothers' recipes, and of the warmth that defines
+          Indian hospitality.
+        </p>
+        <p>
+          We bring together the soul of an Indian street chai stall and the calm
+          of a contemporary cafe — earthy textures, warm light, and the comforting
+          aroma of freshly ground spices.
+        </p>
+
+        <ul class="story-list">
+          <li><span class="ico">✦</span> Traditional Indian Ingredients</li>
+          <li><span class="ico">❀</span> Freshly Prepared Food</li>
+          <li><span class="ico">✺</span> Authentic Beverages</li>
+          <li><span class="ico">❦</span> Warm Indian Hospitality</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SIGNATURE MENU ===================== -->
+  <section class="section section-cream-200" id="menu">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow center">Signature Menu</span>
+        <h2 class="section-title">A Taste of Every Indian Region</h2>
+        <p class="section-subtitle">
+          From frothy masala chai to crisp South Indian dosas and melt-in-the-mouth
+          desserts — explore our handcrafted menu, made fresh every day.
+        </p>
+      </div>
+
+      <!-- CSS-only tabbed menu using hidden radio inputs -->
+      <div class="menu-wrap">
+        <input type="radio" name="menutab" id="tab-beverages" class="tab-radio" checked />
+        <input type="radio" name="menutab" id="tab-snacks" class="tab-radio" />
+        <input type="radio" name="menutab" id="tab-south" class="tab-radio" />
+        <input type="radio" name="menutab" id="tab-desserts" class="tab-radio" />
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <label for="tab-beverages" class="menu-tab" role="tab">Beverages</label>
+          <label for="tab-snacks" class="menu-tab" role="tab">Indian Snacks</label>
+          <label for="tab-south" class="menu-tab" role="tab">South Indian Specials</label>
+          <label for="tab-desserts" class="menu-tab" role="tab">Desserts</label>
         </div>
 
-        <div class="hero-bottom">
-            <span>AUTHENTIC FLAVOURS</span>
-            <span>EST. WITH LOVE IN INDIA</span>
-        </div>
-    </section>
-
-    <!-- STORY -->
-    <section class="story section-padding" id="story">
-        <div class="container story-grid">
-
-            <div class="story-image">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900"
-                     alt="Warm modern cafe interior">
-                <div class="image-label">
-                    <span>100%</span>
-                    <p>Authentic Indian Taste</p>
-                </div>
-            </div>
-
-            <div class="story-content">
-                <p class="eyebrow">OUR STORY</p>
-                <h2>Rooted in Tradition.
-<span>Made for Today.</span></h2>
-
-                <p>
-                    At Aaranya, we believe that every cup tells a story and
-                    every flavour brings people together.
-                </p>
-
-                <p>
-                    Inspired by India's rich culinary heritage, we bring
-                    traditional recipes, authentic ingredients and
-                    contemporary cafe experiences to your table.
-                </p>
-
-                <div class="story-features">
-                    <div>
-                        <strong>01.</strong>
-                        <span>Authentic Recipes</span>
-                    </div>
-                    <div>
-                        <strong>02.</strong>
-                        <span>Fresh Ingredients</span>
-                    </div>
-                    <div>
-                        <strong>03.</strong>
-                        <span>Made with Love</span>
-                    </div>
-                </div>
-
-                <a href="#menu" class="text-link">Discover Our Menu ↗</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- MENU -->
-    <section class="menu section-padding" id="menu">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="eyebrow">A TASTE OF INDIA</p>
-                <h2>Our Signature <span>Menu</span></h2>
-                <p>Traditional favourites, crafted with care.</p>
-            </div>
-
+        <div class="menu-panels">
+          <!-- BEVERAGES -->
+          <div class="menu-panel panel-beverages">
             <div class="menu-grid">
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=700"
-                         alt="Indian masala tea">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Masala Chai</h3>
-                            <span>₹40</span>
-                        </div>
-                        <p>Traditional Indian tea infused with aromatic spices.</p>
-                        <span class="menu-tag">BESTSELLER</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Bestseller</span>
+                  <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=900&q=80" alt="Masala chai served in a clay kulhad cup with spices" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Masala Chai</h3><span class="price">₹40</span></div>
+                  <p class="desc">Brewed with ginger, cardamom &amp; our secret spice blend.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=700"
-                         alt="South Indian coffee">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Filter Coffee</h3>
-                            <span>₹60</span>
-                        </div>
-                        <p>Rich South Indian coffee with a beautiful aroma.</p>
-                        <span class="menu-tag">SIGNATURE</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Irani chai in a porcelain cup with biscuits" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Irani Chai</h3><span class="price">₹50</span></div>
+                  <p class="desc">Creamy Hyderabadi-style chai with khoya &amp; cream.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700"
-                         alt="Indian samosas">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Hot Samosa</h3>
-                            <span>₹30</span>
-                        </div>
-                        <p>Crispy golden pastry filled with spiced potatoes.</p>
-                        <span class="menu-tag">FRESH DAILY</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Signature</span>
+                  <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="South Indian filter coffee in a steel tumbler and dabarah" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>South Indian Filter Coffee</h3><span class="price">₹60</span></div>
+                  <p class="desc">Strong decoction, frothy &amp; aromatic — the real deal.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=700"
-                         alt="Indian dosa">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Masala Dosa</h3>
-                            <span>₹130</span>
-                        </div>
-                        <p>Crispy dosa served with delicious traditional fillings.</p>
-                        <span class="menu-tag">SOUTH INDIAN</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1622322816396-4363b777eee7?auto=format&fit=crop&w=900&q=80" alt="Saffron badam milk with crushed almonds in a brass glass" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Saffron Badam Milk</h3><span class="price">₹70</span></div>
+                  <p class="desc">Kesar &amp; almond milk — rich, creamy &amp; royal.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
-                         alt="Chocolate dessert">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Special Dessert</h3>
-                            <span>₹80</span>
-                        </div>
-                        <p>A delightful sweet treat to complete your visit.</p>
-                        <span class="menu-tag">SWEET SPECIAL</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1622322816396-4363b777eee7?auto=format&fit=crop&w=900&q=80" alt="Rose milk with pink rose syrup swirl and rose petals" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Rose Milk</h3><span class="price">₹60</span></div>
+                  <p class="desc">Chilled milk with rose syrup &amp; fragrant petals.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
-                <article class="menu-card">
-                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700"
-                         alt="Cold coffee">
-                    <div class="menu-info">
-                        <div class="menu-title">
-                            <h3>Cold Coffee</h3>
-                            <span>₹100</span>
-                        </div>
-                        <p>Chilled, creamy coffee for a refreshing experience.</p>
-                        <span class="menu-tag">CUSTOMER FAVOURITE</span>
-                    </div>
-                </article>
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80" alt="Cold coffee in a tall glass with foam and chocolate drizzle" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Cold Coffee</h3><span class="price">₹100</span></div>
+                  <p class="desc">Thick, creamy blend with ice &amp; a chocolate drizzle.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
 
             </div>
+          </div>
 
-            <div class="menu-extra">
-                <p>Good food. Great conversations. Beautiful memories.</p>
-                <a href="#contact" class="btn btn-primary">Visit Our Cafe</a>
+          <!-- INDIAN SNACKS -->
+          <div class="menu-panel panel-snacks">
+            <div class="menu-grid">
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Classic</span>
+                  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Crispy golden samosas with chutney on a brass plate" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Samosa</h3><span class="price">₹30</span></div>
+                  <p class="desc">Crispy pastry pockets of spiced potato &amp; peas.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Crispy golden onion pakoras in a basket with chutney" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Onion Pakoda</h3><span class="price">₹50</span></div>
+                  <p class="desc">Golden, crunchy onion fritters with mint chutney.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Tandoor</span>
+                  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Tandoori paneer tikka skewers with char marks and chutney" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Paneer Tikka</h3><span class="price">₹140</span></div>
+                  <p class="desc">Tandoor-charred spiced cottage cheese &amp; peppers.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Aloo tikki chaat with chutneys yogurt and sev" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Aloo Tikki</h3><span class="price">₹70</span></div>
+                  <p class="desc">Crisp potato patties, chaat-style with chutneys.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Street Food</span>
+                  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Mumbai vada pav with chutneys and fried chilli" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Vada Pav</h3><span class="price">₹60</span></div>
+                  <p class="desc">Mumbai's iconic spiced potato slider with chutneys.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Masala Maggi noodles with vegetables and coriander" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Masala Maggi</h3><span class="price">₹80</span></div>
+                  <p class="desc">Street-style spiced noodle comfort in a bowl.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
             </div>
+          </div>
+
+          <!-- SOUTH INDIAN SPECIALS -->
+          <div class="menu-panel panel-south">
+            <div class="menu-grid">
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Mini idlis soaked in sambar with coconut chutney" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Mini Idli</h3><span class="price">₹70</span></div>
+                  <p class="desc">Steamed rice bites dunked in sambar &amp; chutney.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Chef's Pick</span>
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Ghee podi dosa sprinkled with spiced podi powder" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Ghee Podi Dosa</h3><span class="price">₹120</span></div>
+                  <p class="desc">Crisp dosa tossed in ghee &amp; spiced lentil podi.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Mysore masala dosa with spicy red chutney and potato masala" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Mysore Masala Dosa</h3><span class="price">₹130</span></div>
+                  <p class="desc">Spicy red chutney &amp; potato masala, crisp golden fold.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=900&q=80" alt="Medu vada donut shaped lentil fritters with sambar" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Medu Vada</h3><span class="price">₹60</span></div>
+                  <p class="desc">Crisp lentil donuts with coconut chutney &amp; sambar.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- DESSERTS -->
+          <div class="menu-panel panel-desserts">
+            <div class="menu-grid">
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <span class="tag">Loved</span>
+                  <img src="https://images.unsplash.com/photo-1695568181747-f54dff1d4654?auto=format&fit=crop&w=900&q=80" alt="Gulab jamun dumplings soaked in rose sugar syrup" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Gulab Jamun</h3><span class="price">₹60</span></div>
+                  <p class="desc">Soft milk dumplings soaked in rose-cardamom syrup.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1695568181363-af5c78f4d059?auto=format&fit=crop&w=900&q=80" alt="Rasmalai discs in saffron milk with pistachio" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Rasmalai</h3><span class="price">₹80</span></div>
+                  <p class="desc">Saffron milk-soaked soft cottage cheese, pistachio dust.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-card">
+                <div class="img-wrap">
+                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Malai kulfi on a stick with pistachio and saffron" / loading="lazy">
+                </div>
+                <div class="body">
+                  <div class="row"><h3>Kulfi</h3><span class="price">₹70</span></div>
+                  <p class="desc">Traditional slow-cooked malai kulfi with pistachio.</p>
+                  <div class="foot">
+                    <span class="veg"><span class="veg-mark"></span> Pure Veg</span>
+                    <span class="order">Order &rarr;</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
 
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- WHY CHOOSE US -->
-    <section class="features section-padding">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">THE AARANYA EXPERIENCE</p>
-                <h2>More Than Just <span>A Cafe</span></h2>
-            </div>
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow center">Why Aaranya</span>
+        <h2 class="section-title">Crafted with Care, Served with Soul</h2>
+        <p class="section-subtitle">
+          Four reasons our guests keep coming back — for the flavours, the warmth,
+          and the feeling of being truly at home.
+        </p>
+      </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✦</div>
-                    <h3>Authentic Flavours</h3>
-                    <p>Recipes inspired by India's traditional culinary heritage.</p>
-                </div>
+      <div class="features">
+        <article class="feature-card">
+          <div class="feature-ico">✦</div>
+          <h3>Authentic Indian Flavours</h3>
+          <p>Recipes passed down through generations, made with original spices and time-honoured techniques.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-ico">❀</div>
+          <h3>Freshly Prepared Food</h3>
+          <p>Every dish is made to order with fresh, locally sourced ingredients — never frozen, never rushed.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-ico">✺</div>
+          <h3>Premium Ingredients</h3>
+          <p>Single-estate tea, aromatic whole spices, and pure ghee — quality you can taste in every bite.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-ico">❦</div>
+          <h3>Warm Indian Hospitality</h3>
+          <p>Atithi Devo Bhava — our guests are family. Expect smiles, stories, and a seat that feels like home.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-                <div class="feature-card">
-                    <div class="feature-icon">❋</div>
-                    <h3>Fresh Ingredients</h3>
-                    <p>Carefully selected ingredients for every preparation.</p>
-                </div>
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section section-cream-200" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow center">Cafe Gallery</span>
+        <h2 class="section-title">Moments Brewed at Aaranya</h2>
+        <p class="section-subtitle">
+          A glimpse into our world — warm interiors, frothy chai, sizzling dosas,
+          and the quiet joy of a perfect cup.
+        </p>
+      </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">☕</div>
-                    <h3>Perfect Brews</h3>
-                    <p>Handcrafted beverages prepared with attention to detail.</p>
-                </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item g-big">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Beautiful Indian cafe interior with wooden tables and brass lamps" / loading="lazy">
+          <figcaption class="cap"><div class="t">Our Cafe Interior</div><div class="s">Warm &amp; Earthy</div></figcaption>
+        </figure>
+        <figure class="gallery-item g-tall">
+          <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=900&q=80" alt="Indian chai vendor pouring masala chai from a brass pot" / loading="lazy">
+          <figcaption class="cap"><div class="t">Chai Preparation</div><div class="s">Brewed Fresh</div></figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80" alt="South Indian filter coffee being poured from steel tumbler" / loading="lazy">
+          <figcaption class="cap"><div class="t">Filter Coffee</div><div class="s">South Indian</div></figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80" alt="Assorted Indian snacks spread on a dark wooden table" / loading="lazy">
+          <figcaption class="cap"><div class="t">Snacks Spread</div><div class="s">Crunchy &amp; Spiced</div></figcaption>
+        </figure>
+        <figure class="gallery-item g-wide">
+          <img src="https://images.unsplash.com/photo-1695568181363-af5c78f4d059?auto=format&fit=crop&w=900&q=80" alt="Assorted Indian desserts arranged on brass plates" / loading="lazy">
+          <figcaption class="cap"><div class="t">Sweet Endings</div><div class="s">Desserts</div></figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1744561249162-c597c1670032?auto=format&fit=crop&w=900&q=80" alt="Cozy Indian cafe evening ambience with warm string lights" / loading="lazy">
+          <figcaption class="cap"><div class="t">Evening Ambience</div><div class="s">Cozy Nights</div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-                <div class="feature-card">
-                    <div class="feature-icon">♡</div>
-                    <h3>Indian Hospitality</h3>
-                    <p>A welcoming atmosphere where everyone feels at home.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ===================== SPECIAL OFFERS ===================== -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow center">Special Offers</span>
+        <h2 class="section-title">Combos &amp; Deals to Savour</h2>
+        <p class="section-subtitle">
+          Thoughtfully paired treats at a gentle price — perfect for your daily
+          chai break or an evening with friends.
+        </p>
+      </div>
 
-    <!-- GALLERY -->
-    <section class="gallery section-padding" id="gallery">
-        <div class="container">
+      <div class="offers-grid">
+        <article class="offer-card o1">
+          <span class="ribbon">Bestseller</span>
+          <div class="off-num">₹59</div>
+          <h3>Chai &amp; Samosa Combo</h3>
+          <p>A classic pairing — hot masala chai with a crisp, spiced samosa.</p>
+        </article>
+        <article class="offer-card o2">
+          <span class="ribbon">Combo</span>
+          <div class="off-num">₹99</div>
+          <h3>Filter Coffee &amp; Snack Combo</h3>
+          <p>South Indian filter coffee with a snack of the day from our kitchen.</p>
+        </article>
+        <article class="offer-card o3">
+          <span class="ribbon">Limited</span>
+          <div class="off-num">15% OFF</div>
+          <h3>Evening Snack Special</h3>
+          <p>Flat 15% off on all Indian snacks, every evening between 4 PM – 7 PM.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-            <div class="section-heading">
-                <p class="eyebrow">MOMENTS AT AARANYA</p>
-                <h2>Our Little <span>World</span></h2>
-                <p>A glimpse into our cafe, flavours and experiences.</p>
-            </div>
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section section-green">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow center">Guest Stories</span>
+        <h2 class="section-title">Loved by Our Guests</h2>
+        <p class="section-subtitle">
+          A few words from the wonderful people who make Aaranya a part of their
+          everyday rituals.
+        </p>
+      </div>
 
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-large">
-                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1000"
-                         alt="Cafe interior">
-                </div>
+      <div class="test-grid">
+        <article class="test-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review">
+            Aaranya feels like a warm hug. Their masala chai and ghee podi dosa are
+            the best I've had in the city — the ambience is pure poetry.
+          </p>
+          <div class="who">
+            <span class="avatar">A</span>
+            <span>
+              <div class="n">Ananya Sharma</div>
+              <div class="r">Regular Guest</div>
+            </span>
+          </div>
+        </article>
 
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=700"
-                         alt="Fresh tea">
-                </div>
+        <article class="test-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review">
+            Every dish tells a story of tradition. The filter coffee is authentic
+            and the paneer tikka is smoky perfection. A true hidden gem.
+          </p>
+          <div class="who">
+            <span class="avatar">R</span>
+            <span>
+              <div class="n">Rohan Mehta</div>
+              <div class="r">Food Blogger</div>
+            </span>
+          </div>
+        </article>
 
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700"
-                         alt="Coffee">
-                </div>
+        <article class="test-card">
+          <div class="quote-mark">&ldquo;</div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review">
+            From the chai to the kulfi, everything is crafted with love. The earthy
+            interiors and warm hospitality bring me back every single weekend.
+          </p>
+          <div class="who">
+            <span class="avatar">P</span>
+            <span>
+              <div class="n">Priya Iyer</div>
+              <div class="r">Cafe Lover</div>
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700"
-                         alt="Indian snacks">
-                </div>
+  <!-- ===================== VISIT OUR CAFE ===================== -->
+  <section class="section section-green" id="visit">
+    <div class="container visit-grid">
+      <div class="visit-info">
+        <span class="eyebrow">Visit Our Cafe</span>
+        <h2>Come Sit. Sip. Stay a While.</h2>
+        <p>
+          Find us in the heart of the city — a quiet corner where chai flows, dosas
+          sizzle, and every visit feels like coming home. Reserve your table and
+          let us take care of the rest.
+        </p>
 
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700"
-                         alt="Cafe dining space">
-                </div>
-            </div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="ico">◉</span>
+            <span>
+              <div class="lbl">Address</div>
+              <div class="val">12 Heritage Lane, MG Road,<br />Bengaluru, Karnataka 560001</div>
+            </span>
+          </li>
+          <li class="contact-item">
+            <span class="ico">☎</span>
+            <span>
+              <div class="lbl">Phone</div>
+              <div class="val">+91 98765 43210</div>
+            </span>
+          </li>
+          <li class="contact-item">
+            <span class="ico">✉</span>
+            <span>
+              <div class="lbl">Email</div>
+              <div class="val">hello@aaranyacafe.in</div>
+            </span>
+          </li>
+        </ul>
 
-        </div>
-    </section>
-
-    <!-- SPECIAL OFFERS -->
-    <section class="offers section-padding">
-        <div class="container offer-container">
-
-            <div class="offer-content">
-                <p class="eyebrow">A LITTLE EXTRA HAPPINESS</p>
-                <h2>Good Food.
-Better <span>Offers.</span></h2>
-                <p>Make your cafe moments even more special with our exclusive combos.</p>
-                <a href="#contact" class="btn btn-primary">Explore Offers</a>
-            </div>
-
-            <div class="offer-list">
-                <div class="offer-item">
-                    <div>
-                        <h3>Chai & Samosa</h3>
-                        <p>Your favourite evening combination.</p>
-                    </div>
-                    <strong>₹59</strong>
-                </div>
-
-                <div class="offer-item">
-                    <div>
-                        <h3>Coffee & Snack</h3>
-                        <p>A perfect companion for your coffee break.</p>
-                    </div>
-                    <strong>₹99</strong>
-                </div>
-
-                <div class="offer-item">
-                    <div>
-                        <h3>Evening Special</h3>
-                        <p>Enjoy selected evening snacks.</p>
-                    </div>
-                    <strong>15% OFF</strong>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials section-padding">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="eyebrow">KIND WORDS</p>
-                <h2>What People <span>Say</span></h2>
-            </div>
-
-            <div class="testimonial-grid">
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Beautiful ambience and amazing chai. A perfect place to spend an evening."</p>
-                    <h4>Priya S.</h4>
-                    <span>Happy Customer</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"The filter coffee is wonderful. The traditional flavours make this place special."</p>
-                    <h4>Rahul K.</h4>
-                    <span>Happy Customer</span>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Loved the food, interiors and hospitality. Definitely worth visiting again."</p>
-                    <h4>Ananya R.</h4>
-                    <span>Happy Customer</span>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact section-padding" id="contact">
-        <div class="container contact-grid">
-
-            <div class="contact-content">
-                <p class="eyebrow">COME SAY HELLO</p>
-                <h2>Your Table.
-<span>Our Hospitality.</span></h2>
-
-                <p>
-                    Whether it is a quick coffee, a family outing or a
-                    conversation with friends, we have a place for you.
-                </p>
-
-                <div class="contact-detail">
-                    <span>⌖</span>
-                    <div>
-                        <h4>Our Location</h4>
-                        <p>Add your cafe address here, Vijayawada, Andhra Pradesh.</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <span>◷</span>
-                    <div>
-                        <h4>Opening Hours</h4>
-                        <p>Monday – Sunday
-9:00 AM – 10:00 PM</p>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <span>☎</span>
-                    <div>
-                        <h4>Contact Us</h4>
-                        <p>+91 XXXXX XXXXX</p>
-                    </div>
-                </div>
-
-                <a href="tel:+910000000000" class="btn btn-primary">Call Our Cafe</a>
-            </div>
-
-            <div class="contact-image">
-                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000"
-                     alt="Beautiful cafe seating area">
-                <div class="contact-image-text">
-                    <h3>A little pause.
-A lot of happiness.</h3>
-                    <p>We look forward to welcoming you.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-
-            <div class="footer-brand">
-                <a href="#home" class="logo">AARANYA<span>.</span></a>
-                <p>A taste of tradition, served with love. Bringing India's authentic flavours to your everyday moments.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Explore</h4>
-                <a href="#home">Home</a>
-                <a href="#story">Our Story</a>
-                <a href="#menu">Our Menu</a>
-                <a href="#gallery">Gallery</a>
-            </div>
-
-            <div class="footer-links">
-                <h4>Visit Us</h4>
-                <a href="#contact">Contact</a>
-                <a href="#contact">Opening Hours</a>
-                <a href="#contact">Location</a>
-            </div>
-
-            <div class="footer-links">
-                <h4>Follow Us</h4>
-                <a href="https://instagram.com/">Instagram ↗</a>
-                <a href="https://facebook.com/">Facebook ↗</a>
-                <a href="https://youtube.com/">YouTube ↗</a>
-            </div>
-
+        <div class="hours-table" aria-label="Opening hours">
+          <div class="row"><span class="d">Monday – Thursday</span><span class="h">8:00 AM – 10:00 PM</span></div>
+          <div class="row"><span class="d">Friday – Saturday</span><span class="h">8:00 AM – 11:30 PM</span></div>
+          <div class="row"><span class="d">Sunday</span><span class="h">9:00 AM – 10:00 PM</span></div>
         </div>
 
-        <div class="footer-bottom container">
-            <p>© 2026 Aaranya Cafe. All Rights Reserved.</p>
-            <p>Made with ♥ in India</p>
+        <div class="visit-actions">
+          <a href="#" class="btn btn-primary">Reserve a Table</a>
+          <a href="#menu" class="btn btn-outline">View the Menu</a>
         </div>
-    </footer>
+      </div>
+
+      <div class="map-wrap">
+        <div class="map-placeholder">
+          <div>
+            <div class="pin">◉</div>
+            <div class="t">Aaranya Cafe</div>
+            <div class="s">12 Heritage Lane, MG Road, Bengaluru</div>
+            <div class="s" style="margin-top:14px;font-size:0.78rem;">Google Maps embed placeholder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta-band">
+    <div class="container inner">
+      <h2>Your Table, Your Chai, Your Story.</h2>
+      <p>Reserve a corner at Aaranya and let tradition pour you a cup. Walk-ins welcome, reservations recommended.</p>
+      <a href="#visit" class="btn btn-gold">Reserve a Table</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about-col">
+          <a href="#home" class="brand">
+            <span class="brand-mark">A</span>
+            <span>
+              <span class="brand-name">AARANYA</span>
+              <span class="brand-tag">Cafe</span>
+            </span>
+          </a>
+          <p class="footer-about">
+            A modern Indian cafe celebrating authentic flavours, handcrafted
+            beverages, and the timeless warmth of Indian hospitality. A taste of
+            tradition, served with love.
+          </p>
+          <div class="social-row" aria-label="Social media">
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">x</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#visit">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Menu</h4>
+          <ul class="footer-links">
+            <li><a href="#menu">Beverages</a></li>
+            <li><a href="#menu">Indian Snacks</a></li>
+            <li><a href="#menu">South Indian</a></li>
+            <li><a href="#menu">Desserts</a></li>
+            <li><a href="#menu">Special Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <ul class="footer-contact">
+            <li><span class="ico">◉</span> 12 Heritage Lane, MG Road, Bengaluru 560001</li>
+            <li><span class="ico">☎</span> +91 98765 43210</li>
+            <li><span class="ico">✉</span> hello@aaranyacafe.in</li>
+            <li><span class="ico">◷</span> Open daily, 8:00 AM onwards</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span>2024</span> Aaranya Cafe. All rights reserved.</div>
+        <div>Crafted with <span style="color:var(--terracotta)">♥</span> &middot; <a href="#home">Back to top</a></div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
