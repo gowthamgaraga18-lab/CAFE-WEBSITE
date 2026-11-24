@@ -46,5 +46,5 @@ in **Repository Settings → Pages → Build and deployment**.
 
 - The contact details in `index.html` are sample values (12 Heritage Lane, MG
   Road, Bengaluru 560001; +91 98765 43210; hello@aaranyacafe.in).
-- The footer year is `2024`; update it if you want the current year.
+- The footer year is `2026`; bump it at the start of each new year.
 - Social links in the footer are generic placeholders.
