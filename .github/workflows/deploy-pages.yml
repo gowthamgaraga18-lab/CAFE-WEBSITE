@@ -29,4 +29,4 @@ jobs:
           exclude_assets: '.github'
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: 'Deploy Aaranya Cafe site from {{ ref }}'
+          commit_message: 'Deploy Aaranya Cafe website from ${{ github.ref_name }}'
